@@ -1,7 +1,7 @@
-#Political Discussion Forum
+# Political Discussion Forum
 This is a web application for a political discussion forum built using React and ExpressJS. The app allows users to discuss various political topics, share their opinions, and engage in discussions with other users.
 
-##Features
+## Features
 - User authentication: Users can create an account and log in to the app to access the discussion forums.
 - Discussion forums: The app provides various discussion forums, where users can post their thoughts and opinions on various political topics.
 - User profiles: Users can create a profile that displays their information and activity on the app.
