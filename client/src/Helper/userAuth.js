@@ -68,7 +68,7 @@ export function checkAuthenticated() {
             if (success) {
                 window.location = "/";
             }
-        });
+        }).catch((err) => console.log(err));
 }
 
 export function createAccount(e, refs) {
@@ -106,5 +106,5 @@ export function createAccount(e, refs) {
             }
             messageRef.current.innerHTML = message;
             messageRef.current.classList.add("active");
-        });
+        }).catch((err) => console.log(err));
 }

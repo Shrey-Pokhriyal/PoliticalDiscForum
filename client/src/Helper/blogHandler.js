@@ -13,7 +13,7 @@ export function getAndSet(path, setState) {
       if (data) {
         setState(data);
       }
-    });
+    }).catch((err) => console.log(err));
 }
 
 export function toggleLikesOrBookmarks(e, type, id, dispatcher) {
@@ -27,5 +27,5 @@ export function toggleLikesOrBookmarks(e, type, id, dispatcher) {
       if (!success) {
         dispatcher(notify({ message, success }))
       }
-    })
+    }).catch((err) => console.log(err));
 }

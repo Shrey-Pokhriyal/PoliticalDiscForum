@@ -16,7 +16,7 @@ export function removeDraft(id, setState, dispatcher) {
                 getAndSet('drafts', setState);
                 removeActiveClass(["card_overlay", "card"])
             }
-        })
+        }).catch((err) => console.log(err));
 }
 
 export function updateUserProfile(dispatcher) {
@@ -30,6 +30,8 @@ export function updateUserProfile(dispatcher) {
             if (data) {
                 dispatcher(setProfileData(data));
             }
+        }).catch(err=>{
+            console.log(err);
         });
 }
 
@@ -44,7 +46,7 @@ export function getProfile(username, setState, dispacher) {
             if (success) {
                 setState(data)
             } else dispacher(notify({ message, success }))
-        })
+        }).catch((err) => console.log(err));
 }
 
 
@@ -60,5 +62,5 @@ export function removePost(id, username, setState, dispatcher) {
                 getProfile(username, setState, dispatcher);
                 removeActiveClass(["card_overlay", "card"])
             }
-        })
+        }).catch((err) => console.log(err));
 }
