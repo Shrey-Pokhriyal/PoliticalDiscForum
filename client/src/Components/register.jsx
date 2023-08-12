@@ -32,7 +32,7 @@ export default function Register() {
       <LeftSection className="split left">
         <div className="centered">
           <img src={icon} alt="icon" />
-          <p className="site_title">Bloggie</p>
+          <p className="site_title">PDF</p>
           <p className="site_description">
             Share your Knowladge and Ideas to the world!
           </p>
